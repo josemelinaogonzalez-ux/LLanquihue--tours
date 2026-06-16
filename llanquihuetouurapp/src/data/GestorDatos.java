@@ -1,0 +1,38 @@
+package data;
+
+import model.Tour;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class GestorDatos {
+
+    public ArrayList<Tour> cargarTours(String ruta) {
+
+        ArrayList<Tour> lista = new ArrayList<>();
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(ruta));
+            String linea;
+
+            while ((linea = br.readLine()) != null) {
+
+                String[] datos = linea.split(";");
+
+                String destino = datos[0];
+                String tipo = datos[1];
+                int precio = Integer.parseInt(datos[2]);
+
+                Tour tour = new Tour(destino, tipo, precio);
+                lista.add(tour);
+            }
+
+            br.close();
+
+        } catch (Exception e) {
+            System.out.println("Error al leer archivo: " + e.getMessage());
+        }
+
+        return lista;
+    }
+}

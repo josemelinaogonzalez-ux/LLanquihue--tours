@@ -1,0 +1,5 @@
+Llanquihue;Familiar;500
+Frutillar;Cultural;700
+Calbuco;Gastronomico;900
+Puerto Varas;Cultural;800
+Osorno;Familiar;600
