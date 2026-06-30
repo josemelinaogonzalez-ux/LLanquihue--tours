@@ -1,23 +1,31 @@
 Descripcion
-Aplicacion desarrollada para manejar informacion turistica de la agencia llanquihue tour, el sistema permite cargar datos de texto almacenados en estructuras dinamicas y realizar consultas simples a travez de la consola
+Aplicacion desarrollada para manejar informacion turistica de la agencia llanquihue tour, la aplicacion permite manejar datos de diversos servicios turisticos en la zona de llanquihue utilizando el concepto de herencia.
 
-resources
-├── Tours.txt
 src
 ├── data
-│         └── gestordatos
+│   ├── GestorDatos.java
+│   └── GestorServicios.java
 ├── model
-│         └── tour
-├── ui
-     └── Main
-Funciones
-°Lectura de datos desde archivos txt
-° almacenamiento de informacion en Arraylist
-°Filtrar tours
-°Almacenamiento en Arraylist
-°Filtrar y mostrar tour de acuerdo a su tipo
+│   ├── ExcurcionCultural.java
+│   ├── PaseoLacustre.java
+│   ├── RutaGastronomica.java
+│   ├── ServicioTuristico.java
+│   └── Tour.java
+└── ui
+└── Main.java
+Actualizacion
+°Creacion de clase ServicioTuristico
+°Implementacion de 3 clases
+1-ExcurcionCultural
+2-PaseoLacustre
+3°RutaGastronomica
+°Uso de herencia
+°vizualizacion de informacion
+
 
 Funcionamiento
 1° Abrir Proyecto en Intellij IDEA.
 2° Ejecutar clase Main.Java
-3° Revisar resultados ejecutados y mostrados en consola
+3° El Programa creara de forma automatica 2 objetos con cada tipo de servicio turistico
+3° La informacion de los servicios se muestra dn la consola
+4° al concluir la ejecucion el programa termina automaticmente
